@@ -50,12 +50,10 @@ body{
 }
 
 h3{
-	font-size: 24px;
+	font-size: 22px;
+	text-align: center;
 }
 
-i {
-	font-size: 24px;
-}
 
 /*--nav-bar--*/
 
@@ -72,6 +70,7 @@ i {
 .nav-content{
 	margin: 0 auto;
 	padding: 0 1em;
+	width: 90%;
 }
 
 .add-bar{
@@ -79,20 +78,26 @@ i {
 }
 
 .add-txt{
+	margin-top: 0px;
+	text-align: center;
+}
+
+.no-box, .lg-box, .sm-box, .unit-box{
+	height:35px;
 	display:inline-block;
-	margin-top: -5px;
+	margin-top: 20px;
 }
 
 .lg-box, .sm-box, .unit-box{
-	height:30px;
 	border: #000 1px solid;
-	display:inline-block;
-	margin-top: 20px;
-	margin-left: 5px;
+}
+
+.no-box{
+	width: 300px;
 }
 
 .lg-box{
-	width: 300px;
+	width: 475px;
 }
 
 .sm-box{
@@ -100,13 +105,27 @@ i {
 }
 
 .unit-box{
-	width: 75px;
+	width: 80px;
 }
 
+.add-button{
+ margin-top: 20px;
+}
+
+button{
+	width: 100%;
+	height: 35px;
+	display: inline-block;
+	background-color:#CC6600;
+	border: 1px solid #000;
+	border-radius: 4px;
+	text-shadow: 0 1px 1px #0C0D0D;
+	box-shadow: 0 1px 1px #0C0D0D;
+}
 
 /*--body--*/
 
-html{
+body{
 	background-image: url('../images/farmers-market-jul-2009-12-by-ed-yourdon.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -117,9 +136,8 @@ html{
 	min-height: 100px;
 	margin-left: 50%;
 	margin-right: 50%;
-	position: fixed;
+	position: absolute;
 	z-index: 1;
-	display: absolute;
 	background-color: #fff;
 	box-shadow: 0 .3em 1em #0C0D0D;
 	margin-bottom: 6rem;
@@ -145,37 +163,26 @@ hr.solid-line{
 	padding-top: 10px;
 }
 
-button{
-	width: 100%;
-	height: 35px;
-	padding-right: 10px;
-	background-color:#CC6600;
-	border: 1px solid #000;
-	border-radius: 4px;
-	text-shadow: 0 1px 1px #0C0D0D;
-	box-shadow: 0 1px 1px #0C0D0D;
-}
-
 .list-content .row{
 	position: relative;
 }
 
 .checkbox{
-	height: 20px;
-	width:20px;
-	border: 1px solid #000000;
-	display: inline-block;
+	font-size: 24px;
+	margin-top:-5px;
 }
 
 .list-item{
 	font-size: 18px;
-	padding-top: 10px;
 }
 
-.fa{
-	font-family: FontAwesome;
-	font-size: 28px;
-	margin-top: -1em;
+.col-xs-6 .col-md-1{
+	margin-top: -5px;	
+}
+
+.checked{
+	font-size: 24px;
+	margin-top:-5px;
 }
 
 .selected{
