@@ -49,11 +49,15 @@ body{
 	font-family: sans-serif;
 }
 
-h3{
+h2{
 	font-size: 22px;
 	text-align: center;
 }
 
+h3{
+	font-size: 20px;
+	text-align: center;
+}
 
 /*--nav-bar--*/
 
@@ -73,13 +77,15 @@ h3{
 	width: 90%;
 }
 
-.add-bar{
-	display: inline-block;
+.list-name{
+	margin-top: 0px;
+	text-align: center;
 }
 
 .add-txt{
-	margin-top: 0px;
+	margin-top: 5px;
 	text-align: center;
+	color: #B2B2B2;
 }
 
 .no-box, .lg-box, .sm-box, .unit-box{
@@ -109,7 +115,10 @@ h3{
 }
 
 .add-button{
- margin-top: 20px;
+	margin-top: 20px;
+	color: #0C0D0D;
+	font-weight: bold;
+	font-size: 18px;
 }
 
 button{
@@ -119,7 +128,7 @@ button{
 	background-color:#CC6600;
 	border: 1px solid #000;
 	border-radius: 4px;
-	text-shadow: 0 1px 1px #0C0D0D;
+	text-shadow: 0 1px 1px #fff;
 	box-shadow: 0 1px 1px #0C0D0D;
 }
 
@@ -147,29 +156,8 @@ body{
 	padding-right: 20px;
 }
 
-.list-head .row{
-	position:fixed;
-	width: 100%;
-	margin-top: 0px;
-}
-
-hr.solid-line{
-	border:0;
-	border-bottom: #CC6600 3px solid;
-}
-
-.list-head{
-	padding-left: 70px;
-	padding-top: 10px;
-}
-
 .list-content .row{
 	position: relative;
-}
-
-.checkbox{
-	font-size: 24px;
-	margin-top:-5px;
 }
 
 .list-item{
@@ -180,12 +168,17 @@ hr.solid-line{
 	margin-top: -5px;	
 }
 
-.checked{
+.no-check, .checked{
 	font-size: 24px;
 	margin-top:-5px;
 }
 
+.box-right{
+	float:right;
+	text-align: right;
+}
+
 .selected{
 	text-decoration: line-through;
-	color: grey;
+	color: #B2B2B2;
 }

@@ -20,17 +20,23 @@
 	<nav class="nav-bar">
 		<div class="nav-content row">
 			<div class="col-md-4">
-				<div class="no-box"><h3 class="add-txt">List Name (ie. Groceries)</h3>
+				<div class="no-box"><h3 class="list-name">List Name (ie. Groceries)</h3>
 				</div>
 			</div>
 			<div class="col-md-5">
-				<div class="lg-box"><h3 class="add-txt">Item</h3></div>
+				<div class="lg-box">
+					<h4 class="add-txt">Item</h4>
+				</div>
 			</div>
 			<div class="col-md-1">
-				<div class="sm-box"><h3 class="add-txt">Qty</h3></div>
+				<div class="sm-box">
+					<h4 class="add-txt">Qty</h4>
+				</div>
 			</div>
 			<div class="col-md-1">
-				<div class="unit-box"><h3 class="add-txt">Unit</h3></div>
+				<div class="unit-box">
+					<h4 class="add-txt">Unit</h4>
+				</div>
 			</div>
 			<div class="col-md-1">
 				<div class="add-button">
@@ -42,60 +48,88 @@
 
 	<div class="content">
 		<div class="list">
-			<div class="list-content row">
-				<div class="col-xs-6 col-md-1"><div class="checkbox"><i class="fa fa-square-o"></i></div></div>
-				<div class="col-xs-6 col-md-8 list-item">Milk</div>
-				<div class="col-xs-6 col-md-1 list-item">1</div>
-				<div class="col-xs-6 col-md-2 list-item">gal.</div>
-			</div>
-			<div class="list-content row">
-				<div class="col-xs-6 col-md-1"><div class="checked"><div><i class="fa fa-check-square-o"></i></div></div></div>
-				<div class="col-xs-6 col-md-8 list-item selected">Apples</div>
-				<div class="col-xs-6 col-md-1 list-item selected">5</div>
-				<div class="col-xs-6 col-md-2 list-item selected">pieces</div>
-			</div>
-			<div class="list-content row">
-				<div class="col-xs-6 col-md-1"><div class="checkbox"></div></div>
-				<div class="col-xs-6 col-md-8 list-item">Chicken Breasts</div>
-				<div class="col-xs-6 col-md-1 list-item">2</div>
-				<div class="col-xs-6 col-md-2 list-item">lbs.</div>
-			</div>
-			<div class="list-content row">
-				<div class="col-xs-6 col-md-1"><div class="checkbox"><i class="fa fa-square-o"></i></div></div>
-				<div class="col-xs-6 col-md-8 list-item">Milk</div>
-				<div class="col-xs-6 col-md-1 list-item">1</div>
-				<div class="col-xs-6 col-md-2 list-item">gal.</div>
-			</div>
-			<div class="list-content row">
-				<div class="col-xs-6 col-md-1"><div class="checked"><div><i class="fa fa-check-square-o"></i></div></div></div>
-				<div class="col-xs-6 col-md-8 list-item selected">Apples</div>
-				<div class="col-xs-6 col-md-1 list-item selected">5</div>
-				<div class="col-xs-6 col-md-2 list-item selected">pieces</div>
-			</div>
-			<div class="list-content row">
-				<div class="col-xs-6 col-md-1"><div class="checkbox"></div></div>
-				<div class="col-xs-6 col-md-8 list-item">Chicken Breasts</div>
-				<div class="col-xs-6 col-md-1 list-item">2</div>
-				<div class="col-xs-6 col-md-2 list-item">lbs.</div>
-			</div>
-			<div class="list-content row">
-				<div class="col-xs-6 col-md-1"><div class="checkbox"><i class="fa fa-square-o"></i></div></div>
-				<div class="col-xs-6 col-md-8 list-item">Milk</div>
-				<div class="col-xs-6 col-md-1 list-item">1</div>
-				<div class="col-xs-6 col-md-2 list-item">gal.</div>
-			</div>
-			<div class="list-content row">
-				<div class="col-xs-6 col-md-1"><div class="checked"><div><i class="fa fa-check-square-o"></i></div></div></div>
-				<div class="col-xs-6 col-md-8 list-item selected">Apples</div>
-				<div class="col-xs-6 col-md-1 list-item selected">5</div>
-				<div class="col-xs-6 col-md-2 list-item selected">pieces</div>
-			</div>
-			<div class="list-content row">
-				<div class="col-xs-6 col-md-1"><div class="checkbox"></div></div>
-				<div class="col-xs-6 col-md-8 list-item">Chicken Breasts</div>
-				<div class="col-xs-6 col-md-1 list-item">2</div>
-				<div class="col-xs-6 col-md-2 list-item">lbs.</div>
-			</div>
+			<ul>
+				<li class="list-content row">
+					<div class="col-xs-6 col-md-1">
+						<div class="checked">
+							<div><i class="fa fa-check-square-o"></i></div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-6 list-item selected">Apples</div>
+					<div class="col-xs-6 col-md-1 list-item selected">5</div>
+					<div class="col-xs-6 col-md-1 list-item selected">pieces</div>
+					<div class="col-xs-6 col-md-2 list-item box-right">
+						<i class="fa fa-pencil"></i>
+					</div>
+					<div class="col-xs-6 col-md-1 list-item box-right">
+						<i class="fa fa-trash-o"></i>
+					</div>
+				</li>
+				<li class="list-content row">
+					<div class="col-xs-6 col-md-1">
+						<div class="no-check">
+							<i class="fa fa-square-o"></i>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-6 list-item">Milk</div>
+					<div class="col-xs-6 col-md-1 list-item">1</div>
+					<div class="col-xs-6 col-md-1 list-item">gal.</div>
+					<div class="col-xs-6 col-md-2 list-item box-right">
+						<i class="fa fa-pencil"></i>
+					</div>
+					<div class="col-xs-6 col-md-1 list-item box-right">
+						<i class="fa fa-trash-o"></i>
+					</div>
+				</li>
+				<li class="list-content row">
+					<div class="col-xs-6 col-md-1">
+						<div class="no-check">
+							<i class="fa fa-square-o"></i>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-6 list-item">Chicken Breats</div>
+					<div class="col-xs-6 col-md-1 list-item">2</div>
+					<div class="col-xs-6 col-md-1 list-item">lbs</div>
+					<div class="col-xs-6 col-md-2 list-item box-right">
+						<i class="fa fa-pencil"></i>
+					</div>
+					<div class="col-xs-6 col-md-1 list-item box-right">
+						<i class="fa fa-trash-o"></i>
+					</div>
+				</li>
+				<li class="list-content row">
+					<div class="col-xs-6 col-md-1">
+						<div class="checked">
+							<div><i class="fa fa-check-square-o"></i></div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-6 list-item selected">Eggs</div>
+					<div class="col-xs-6 col-md-1 list-item selected">1</div>
+					<div class="col-xs-6 col-md-1 list-item selected">doz.</div>
+					<div class="col-xs-6 col-md-2 list-item box-right">
+						<i class="fa fa-pencil"></i>
+					</div>
+					<div class="col-xs-6 col-md-1 list-item box-right">
+						<i class="fa fa-trash-o"></i>
+					</div>
+				</li>
+				<li class="list-content row">
+					<div class="col-xs-6 col-md-1">
+						<div class="no-check">
+							<i class="fa fa-square-o"></i>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-6 list-item">Shredded Cheese</div>
+					<div class="col-xs-6 col-md-1 list-item">1</div>
+					<div class="col-xs-6 col-md-1 list-item">lb.</div>
+					<div class="col-xs-6 col-md-2 list-item box-right">
+						<i class="fa fa-pencil"></i>
+					</div>
+					<div class="col-xs-6 col-md-1 list-item box-right">
+						<i class="fa fa-trash-o"></i>
+					</div>
+				</li>
+			<ul>
 		<div>
 	</div>
 
