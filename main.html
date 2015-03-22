@@ -5,13 +5,16 @@
 	<link rel="stylesheet" href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js">
+	</script>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
 
 	<title>Shopping List App</title>
 </head>
@@ -26,30 +29,40 @@
 					<button>Clear List</button>
 				</div>
 			</div>
-			<div class="bottom-header">
-				<div class="lg-box">
-					<h4 class="add-txt">Item</h4>
-				</div>
-				<div class="sm-box">
-					<h4 class="add-txt">Qty</h4>
-				</div>
-				<div class="unit-box">
-					<h4 class="add-txt">Unit</h4>
-				</div>
-				<div class="add-button">
-					<i class="fa fa-plus-square-o"></i>
-				</div>
-			</div>
+				<form class="bottom-header">
+					<div class="form-box">
+						<h4 class="add-txt">
+							<input type="text" id="item" class="lg-box" placeholder="Item"/>
+						</h4>
+					</div>
+					<div class="form-box">
+						<h4 class="add-txt qty">
+							<input type="text" name="Qty" class="sm-box" placeholder="Qty"/>
+						</h4>
+					</div>
+					<div class="form-box">
+						<h4 class="add-txt unit">
+							<input type="text" name="Unit" class="unit-box" placeholder="Unit"/>
+						</h4>
+					</div>
+					<div class="add-button">
+							<input type="submit" class="fa fa-plus-square-o">
+							</input>
+					</div>
+				</form>
 		</div>
 	</nav>
 
 	<div class="content">
-		<div class="list">
+		<div id="list">
 			<ul>
 				<li class="list-content row">
 					<div class="col-xs-1 col-md-1">
-						<div class="checked">
-							<div><i class="fa fa-check-square-o"></i></div>
+						<div class="no-check">
+							<i class="fa fa-square-o"></i>
+						</div>
+						<div class="checked" style="display:none">
+							<i class="fa fa-check-square-o"></i>
 						</div>
 					</div>
 					<div class="col-xs-6 col-md-6 list-item selected">Apples</div>
@@ -126,8 +139,8 @@
 						<i class="fa fa-trash-o"></i>
 					</div>
 				</li>
-			<ul>
-		<div>
+			</ul>
+		</div>
 	</div>
 
 </body>
