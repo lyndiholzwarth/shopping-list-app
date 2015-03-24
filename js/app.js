@@ -5,11 +5,9 @@ $(document).ready(function(){
 		var UnitName = $('#Unit').val();
     event.preventDefault();
     	$('.no-check').show();
-   		$('ul').prepend( itemName + " " + QtyName + " " + UnitName);
-    // Log the event object for inspectin'
-    console.log( event );
+   		$('li').prepend( itemName + " " + QtyName + " " + UnitName);
+			$('li').addClass('.list-item');
 });
-
 //	$('ul').on('click', 'li', function(event){
 //	  $("li").toggleClass( "seleted" );
 //	  		console.log (event);
@@ -21,5 +19,3 @@ $(document).ready(function(){
 });
 
 });
-
-var itemName = "('#item').val()"
