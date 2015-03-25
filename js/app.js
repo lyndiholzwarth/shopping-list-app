@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $( "form" ).on( "submit", function( event ) {
+  $( "form" ).on( 'click', '.add-button', function( event ) {
     //get content from forma nd reset defaults
     var itemName = $('#item').val();
     var QtyName = $('#Qty').val();
@@ -37,17 +37,14 @@ $(document).ready(function(){
       //clears list
   });
 
- // $('ul').on('click', 'li', function(event){
   // fires when any LIs are clicked on
   // including LIs that aren't on the page when it is initially loaded
 //});
-    $('.list-content').on('click', function(event){
-
+    $('ul').on('click', '.list-content', function(event){
   //toggle function
- // $('#list').click(function( ){
-    $('.no-check').toggle();
-    $('.checked').toggle();
-   $(this).toggleClass('selected')
+   $(this).toggleClass('selected');
+      $('.no-check').toggle();
+      $('.checked').toggle();
     console.log (event)
   });
 

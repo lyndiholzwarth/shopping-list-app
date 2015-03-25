@@ -135,14 +135,15 @@ body{
 
 .add-button{
 	margin-top: 20px;
-	color: #0C0D0D;
+	background-color: #fff;
 	font-weight: bold;
 	font-size: 24px;
 	display: inline-block;
 	margin-left: 1%;
+	border: none;
 }
 
-button{
+.clear-button{
 	height: 35px;
 	width: 100px;
 	display: inline-block;
@@ -190,6 +191,11 @@ body{
 	margin-top: -5px;	
 }
 
+.no-check{
+	background-color: #fff;
+	border: none;
+}
+
 .no-check, .checked{
 	font-size: 24px;
 	margin-top:-5px;
@@ -201,7 +207,6 @@ body{
 }
 
 .selected{
-	text-decoration: line-through;
 	color: #B2B2B2;
 }
 
