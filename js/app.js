@@ -1,14 +1,15 @@
 $(document).ready(function(){
   $( "form" ).on( "submit", function( event ) {
-  // AddRow();
-  var itemName = $('#item').val();
-  var QtyName = $('#Qty').val();
-  var UnitName = $('#Unit').val();
+    //get content from forma nd reset defaults
+    var itemName = $('#item').val();
+    var QtyName = $('#Qty').val();
+    var UnitName = $('#Unit').val();
+    $('#item').val("");
+    $('#Qty').val("");
     $('#Unit').val("");
-
     // insert new unit of content to list
     event.preventDefault();
-    //  $('.no-check').show();
+    // Add new row
     $('#list').prepend(
       '<li class="list-content row">\
         <div class="col-xs-1 col-md-1">\
@@ -22,21 +23,33 @@ $(document).ready(function(){
         <div class="col-xs-6 col-md-6 list-item">' + itemName +'</div>\
         <div class="col-xs-1 col-md-1 list-item">' + QtyName +' </div>\
         <div class="col-xs-2 col-md-1 list-item">' + UnitName +' </div>\
+        <div class="col-xs-1 col-md-2 list-item box-right">\
+            <i class="fa fa-pencil"></i>\
+        </div>\
+        <div class="col-xs-1 col-md-1 list-item box-right">\
+            <i class="fa fa-trash-o"></i>\
+        </div>\
       </li>');
   });
-//  $('ul').on('click', 'li', function(event){
-//    $("li").toggleClass( "seleted" );
-//      console.log (event);
+
+  $('.top-header').on ('click', '.clear-button', function(event){
+      $( 'li' ).remove( );
+      //clears list
+  });
+
+ // $('ul').on('click', 'li', function(event){
   // fires when any LIs are clicked on
   // including LIs that aren't on the page when it is initially loaded
 //});
-  $('.top-header').on ('click', '.clear-button', function(event){
-      $( 'li' ).remove( );
+    $('.list-content').on('click', function(event){
+
+  //toggle function
+ // $('#list').click(function( ){
+    $('.no-check').toggle();
+    $('.checked').toggle();
+   $(this).toggleClass('selected')
+    console.log (event)
   });
+
+
 });
-
-//function AddRow(){
-     //  $('.list-content').prepend( '<div class="col-xs-6 col-md-6 list-item">' + itemName + " </div>');
-//};
-
-//example: $('#theOrder').append('<tr><td class="newLine">'+puddingName+'</td><td><input type="text" class="form-control" value="1"></td></tr>');
