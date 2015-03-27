@@ -13,12 +13,14 @@ $(document).ready(function(){
     $('#list').prepend(
       '<li class="list-content row">\
         <div class="col-xs-1 col-md-1">\
-          <div class="no-check">\
-            <i class="fa fa-square-o"></i>\
-          </div>\
-          <div class="checked" style="display:none">\
-            <i class="fa fa-check-square-o"></i>\
-          </div>\
+          <button class="col-xs-1 col-md-1">\
+            <div class="no-check">\
+              <i class="fa fa-square-o"></i>\
+            </div>\
+            <div class="checked" style="display:none">\
+              <i class="fa fa-check-square-o"></i>\
+            </div>\
+          </button>\
         </div>\
         <div class="col-xs-6 col-md-6 list-item">' + itemName +'</div>\
         <div class="col-xs-1 col-md-1 list-item">' + QtyName +' </div>\
@@ -49,8 +51,8 @@ $(document).ready(function(){
   //  $(this).toggleClass("flaticon-eraser2");
   //  $(this).parent().parent().toggleClass("checked");
   //    $('li').closest('.no-check').css("backgColor", "red")
-        $(this).toggleClass('fa-square-o');
-        $(this).toggleClass('fa-check-square-o');
+   //     $(this).toggleClass('fa-square-o');
+     //   $(this).toggleClass('fa-check-square-o');
    //   $('list-content').parent('.checked').toggle();
     console.log (event)
   });
@@ -60,7 +62,7 @@ $(document).ready(function(){
   });
 
     $('ul').on('click', '.fa-pencil', function(event){
- 
+
  });
 
 

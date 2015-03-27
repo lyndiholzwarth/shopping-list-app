@@ -191,10 +191,10 @@ body{
 	margin-top: -5px;	
 }
 
-/*button > .col-xs-1 > .col-md-1{
-	background-color: #fff;
+button {
+	background-color: transparent;
 	border: none;
-}*/
+}
 
 .no-check{
 	background-color: #fff;
