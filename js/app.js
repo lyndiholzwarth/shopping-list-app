@@ -38,16 +38,11 @@ $(document).ready(function(){
       //clears list
   });
 
-  // fires when any LIs are clicked on
-  // including LIs that aren't on the page when it is initially loaded
-//});
-    $('ul').on('click', '.list-content', function(event){
-  //toggle function
-   $(this).toggleClass('selected');
-   //     $(this).toggleClass('fa-square-o');
-     //   $(this).toggleClass('fa-check-square-o');
-   //   $('list-content').parent('.checked').toggle();
-    console.log (event)
+  // fires when any checkboxes are clicked
+  $('ul').on('click', '.check', function(event){
+    //toggle checked/no-check
+    $('.no-check', this).toggle();
+    $('.checked', this).toggle();
   });
 
   $('ul').on('click', '.fa-trash-o', function(event){
