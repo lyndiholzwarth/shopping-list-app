@@ -44,11 +44,6 @@ $(document).ready(function(){
     $('ul').on('click', '.list-content', function(event){
   //toggle function
    $(this).toggleClass('selected');
-//    $('#item_list').on('click', '.left_icon > i', function() {
-  //  $(this).toggleClass("flaticon-pencil122");
-  //  $(this).toggleClass("flaticon-eraser2");
-  //  $(this).parent().parent().toggleClass("checked");
-  //    $('li').closest('.no-check').css("backgColor", "red")
    //     $(this).toggleClass('fa-square-o');
      //   $(this).toggleClass('fa-check-square-o');
    //   $('list-content').parent('.checked').toggle();
