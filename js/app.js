@@ -23,12 +23,13 @@ $(document).ready(function(){
         <div class="col-xs-6 col-md-6 list-item">' + itemName +'</div>\
         <div class="col-xs-1 col-md-1 list-item">' + QtyName +' </div>\
         <div class="col-xs-2 col-md-1 list-item">' + UnitName +' </div>\
-        <div class="col-xs-1 col-md-2 list-item box-right">\
+          <div class="col-xs-1 col-md-1 list-item"></div>\
+          <button class="col-xs-1 col-md-1 list-item box-right">\
             <i class="fa fa-pencil"></i>\
-        </div>\
-        <div class="col-xs-1 col-md-1 list-item box-right">\
+          </button>\
+          <button class="col-xs-1 col-md-1 list-item box-right">\
             <i class="fa fa-trash-o"></i>\
-        </div>\
+          </button>\
       </li>');
   });
 
@@ -43,10 +44,25 @@ $(document).ready(function(){
     $('ul').on('click', '.list-content', function(event){
   //toggle function
    $(this).toggleClass('selected');
-      $('.no-check').toggle();
-      $('.checked').toggle();
+//    $('#item_list').on('click', '.left_icon > i', function() {
+  //  $(this).toggleClass("flaticon-pencil122");
+  //  $(this).toggleClass("flaticon-eraser2");
+  //  $(this).parent().parent().toggleClass("checked");
+  //    $('li').closest('.no-check').css("backgColor", "red")
+        $(this).toggleClass('fa-square-o');
+        $(this).toggleClass('fa-check-square-o');
+   //   $('list-content').parent('.checked').toggle();
     console.log (event)
   });
+
+  $('ul').on('click', '.fa-trash-o', function(event){
+      $(this).closest('.row').remove();
+  });
+
+    $('ul').on('click', '.fa-pencil', function(event){
+ 
+ });
+
 
 
 });

@@ -137,7 +137,7 @@ body{
 	margin-top: 20px;
 	background-color: #fff;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 30px;
 	display: inline-block;
 	margin-left: 1%;
 	border: none;
@@ -191,6 +191,11 @@ body{
 	margin-top: -5px;	
 }
 
+/*button > .col-xs-1 > .col-md-1{
+	background-color: #fff;
+	border: none;
+}*/
+
 .no-check{
 	background-color: #fff;
 	border: none;
@@ -204,11 +209,16 @@ body{
 .box-right{
 	float:right;
 	text-align: right;
+	background-color: #fff;
+	border: none;
 }
 
 .selected{
 	color: #B2B2B2;
+	text-decoration: underline;
 }
+
+
 
 /*responsive code*/
 
