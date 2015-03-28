@@ -6,13 +6,13 @@ $(document).ready(function(){
     var UnitName = $('#Unit').val();
     $('#item').val("");
     $('#Qty').val("");
-    $('#Unit').val("");
+    $('#Unit').val("Units");
     // insert new unit of content to list
     event.preventDefault();
     // Add new row
     $('#list').prepend(
-      '<li class="list-content row">\
-          <button class="col-xs-1 col-md-1">\
+      '       <li class="list-content row">\
+          <button class="check col-xs-1 col-md-1">\
             <div class="no-check">\
               <i class="fa fa-square-o"></i>\
             </div>\
@@ -23,15 +23,12 @@ $(document).ready(function(){
           <div class="col-xs-6 col-md-6 list-item">' + itemName +'</div>\
           <div class="col-xs-1 col-md-1 list-item">' + QtyName +' </div>\
           <div class="col-xs-2 col-md-1 list-item">' + UnitName +' </div>\
-            <div class="col-xs-1 col-md-1 list-item"></div>\
-            <button class="col-xs-1 col-md-1 list-item box-right">\
-              <i class="fa fa-pencil"></i>\
-            </button>\
-            <button class="col-xs-1 col-md-1 list-item box-right">\
-              <i class="fa fa-trash-o"></i>\
-            </button>\
-      </li>');
-  });
+           <div class="col-xs-1 col-md-1 list-item"></div>\
+          <button class="col-xs-1 col-md-1 box-right">\
+            <i class="fa fa-trash-o"></i>\
+          </button>\
+        </li>');
+    });
 
   $('.top-header').on ('click', '.clear-button', function(event){
       $( 'li' ).remove( );
@@ -41,23 +38,17 @@ $(document).ready(function(){
   // fires when any LIs are clicked on
   // including LIs that aren't on the page when it is initially loaded
 //});
-    $('ul').on('click', '.list-content', function(event){
-  //toggle function
-   $(this).toggleClass('selected');
-   //     $(this).toggleClass('fa-square-o');
-     //   $(this).toggleClass('fa-check-square-o');
-   //   $('list-content').parent('.checked').toggle();
-    console.log (event)
-  });
+    $('ul').on('click', '.list-content', 'check', function(event){
+    //toggle function
+       $('.list-item',this).toggleClass('selected');
+   //  console.log (event)});
+        // fires when any checkboxes are clicked
+      $('.no-check', this).toggle();
+      $('.checked', this).toggle();
+    });
 
-  $('ul').on('click', '.fa-trash-o', function(event){
-      $(this).closest('.row').remove();
-  });
-
-    $('ul').on('click', '.fa-pencil', function(event){
-
- });
-
-
+    $('ul').on('click', '.fa-trash-o', function(event){
+        $(this).closest('.row').remove();
+    });
 
 });
