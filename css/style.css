@@ -220,8 +220,16 @@ button {
 	text-decoration: line-through;
 }
 
-
-
+.copyright{
+	float:right;
+	text-align: right;
+	padding-right: 20px;
+	margin-top: 800px;
+}
+.white-bkgrd{
+	background-color: rgba(255,255,255,.7);
+	padding: 10px;
+}
 /*responsive code*/
 
 @media only screen and (max-width: 993px) {
